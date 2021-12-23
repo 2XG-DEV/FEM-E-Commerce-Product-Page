@@ -9,3 +9,28 @@
 .description__container {
   padding: 1.6rem;
 }
+
+.desc-container {
+  max-width: 25rem;
+}
+
+@media screen and (min-width: 90em) {
+  .addCart__buttons {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .amount-container {
+    flex: 0.3;
+  }
+
+  .addButton-container {
+    flex: 0.7;
+  }
+
+  .price {
+    display: block;
+  }
+}

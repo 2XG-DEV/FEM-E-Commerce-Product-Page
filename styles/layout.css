@@ -1,0 +1,15 @@
+main {
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (min-width: 90em) {
+  .main__container {
+    display: flex;
+    padding: 0 5rem;
+    gap: 5rem;
+  }
+  .desc-container {
+    max-width: 30vw;
+  }
+}

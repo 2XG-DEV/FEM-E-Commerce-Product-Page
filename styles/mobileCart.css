@@ -10,6 +10,7 @@
   z-index: 100;
   border-radius: 8px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  max-width: 30rem;
 }
 
 .mCart__title-container {

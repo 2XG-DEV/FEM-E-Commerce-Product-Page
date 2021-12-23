@@ -1,5 +1,6 @@
 .navbar {
   height: 10vh;
+  border-bottom: 1px solid var(--grayish-blue);
 }
 
 .navbar__profile-container {
@@ -65,6 +66,8 @@
 
 .navbar__cart-container {
   position: relative;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .navbar__cart-container::after {
@@ -84,4 +87,32 @@
   width: fit-content;
   padding: 0 0.4rem;
   border-radius: 5px;
+}
+
+.navbar__desktop-links {
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.navbar__desktop-links > li {
+  cursor: pointer;
+}
+
+.navbar__desktop-links-container {
+  display: none;
+  flex: 1;
+  max-width: 30rem;
+}
+
+@media screen and (min-width: 90em) {
+  .navbar__desktop-links-container {
+    display: block;
+  }
+  .navbar__profile-container {
+    height: 60%;
+  }
+
+  .navbar__menu-container {
+    display: none;
+  }
 }

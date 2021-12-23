@@ -21,6 +21,15 @@
         <div class="navbar__logo-container">
           <img src="./images/logo.svg" alt="sneakers" />
         </div>
+        <div class="navbar__desktop-links-container">
+          <ul class="navbar__desktop-links flex text-gray text-bold">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
         <button
           id="cart"
           class="navbar__cart-container ml-auto"
@@ -45,65 +54,92 @@
       </div>
     </nav>
     <main>
-      <div class="image-carousel-container">
-        <div class="image-carousel-img-container">
-          <img id="current" src="./images/image-product-1.jpg" alt="photo" />
-        </div>
-        <div class="image-carousel-left">
-          <img id="prev" src="./images/icon-previous.svg" alt="left" />
-        </div>
-        <div class="image-carousel-right">
-          <img id="next" src="./images/icon-next.svg" alt="right" />
-        </div>
-      </div>
-      <div class="description">
-        <div class="description__container">
-          <p class="description__tag text-orange text-bold mb-m">
-            SNEAKER COMPANY
-          </p>
-          <h1 class="description__title text-bold mb-m">
-            Fall Limited Edition Sneakers
-          </h1>
-          <p class="description__text text-gray">
-            These low-profile sneakers are your perfect casual wear companion.
-            Featuring durable rubber outer sole, they'll withstand everything
-            the weather can offer.
-          </p>
-        </div>
-      </div>
-      <div class="addCart">
-        <div class="addCart-container">
-          <div class="price flex align-center">
-            <p class="price__cost text-bold">$125.00</p>
-            <p class="price__deal text-orange text-bold">50%</p>
-            <p class="price__old text-bold">$250.00</p>
+      <div class="main__container">
+        <div class="image-carousel-container">
+          <div class="image-carousel-img-container">
+            <img id="current" src="./images/image-product-1.jpg" alt="photo" />
           </div>
-          <div class="amount-container flex align-center">
-            <button id="decrement">
-              <img src="./images/icon-minus.svg" alt="minus" />
-            </button>
-            <div class="amount-number-container">
-              <p id="amount" class="text-bold">0</p>
+          <div class="image-carousel-left">
+            <img id="prev" src="./images/icon-previous.svg" alt="left" />
+          </div>
+          <div class="image-carousel-right">
+            <img id="next" src="./images/icon-next.svg" alt="right" />
+          </div>
+          <div class="gallery-images-container">
+            <div class="image-container">
+              <img src="./images/image-product-1.jpg" alt="product1" />
             </div>
-            <button id="increment">
-              <img id="increment" src="./images/icon-plus.svg" alt="plus" />
-            </button>
+            <div class="image-container">
+              <img src="./images/image-product-2.jpg" alt="product1" />
+            </div>
+            <div class="image-container">
+              <img src="./images/image-product-3.jpg" alt="product1" />
+            </div>
+            <div class="image-container">
+              <img src="./images/image-product-4.jpg" alt="product1" />
+            </div>
           </div>
-          <div class="addButton-container flex align-center">
-            <button
-              id="addToCart"
-              class="addCart__addButton text-white text-bold"
-            >
-              <img
-                class="addCart__addButton-icon inline"
-                src="./images/icon-cart.svg"
-                alt=""
-              />
-              Add to cart
-            </button>
+        </div>
+        <div class="desc-container">
+          <div class="description">
+            <div class="description__container">
+              <p class="description__tag text-orange text-bold mb-m">
+                SNEAKER COMPANY
+              </p>
+              <h1 class="description__title text-bold mb-m">
+                Fall Limited Edition Sneakers
+              </h1>
+              <p class="description__text text-gray">
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring durable rubber outer sole, they'll
+                withstand everything the weather can offer.
+              </p>
+            </div>
+          </div>
+          <div class="addCart">
+            <div class="addCart-container">
+              <div class="price flex align-center">
+                <div class="container flex">
+                  <p class="price__cost text-bold">$125.00</p>
+                  <p class="price__deal text-orange text-bold">50%</p>
+                </div>
+                <p class="price__old text-bold">$250.00</p>
+              </div>
+              <div class="addCart__buttons">
+                <div class="amount-container flex align-center">
+                  <button id="decrement">
+                    <img src="./images/icon-minus.svg" alt="minus" />
+                  </button>
+                  <div class="amount-number-container">
+                    <p id="amount" class="text-bold">0</p>
+                  </div>
+                  <button id="increment">
+                    <img
+                      id="increment"
+                      src="./images/icon-plus.svg"
+                      alt="plus"
+                    />
+                  </button>
+                </div>
+                <div class="addButton-container flex align-center">
+                  <button
+                    id="addToCart"
+                    class="addCart__addButton text-white text-bold"
+                  >
+                    <img
+                      class="addCart__addButton-icon inline"
+                      src="./images/icon-cart.svg"
+                      alt=""
+                    />
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       <div id="mCart" class="mobile-cart-view">
         <div class="mobile-cart-container">
           <div class="mCart__title-container flex align-center">

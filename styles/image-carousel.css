@@ -9,12 +9,14 @@
 
 .image-carousel-img-container {
   height: 38vh;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .image-carousel-img-container > img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .image-carousel-right {
@@ -35,4 +37,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-images-container {
+  display: none;
+}
+
+@media screen and (min-width: 90em) {
+  .image-carousel-left,
+  .image-carousel-right {
+    display: none;
+  }
+
+  .gallery-images-container {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    height: 10rem;
+    margin-top: 1rem;
+  }
+
+  .image-container {
+    height: 7rem;
+  }
+
+  .image-container > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .image-carousel-img-container > img {
+    object-fit: cover;
+  }
 }
