@@ -1,0 +1,46 @@
+.addCart-container {
+  padding: -0 1.6rem 1.6rem 1.6rem;
+}
+
+.price {
+  margin-bottom: 1rem;
+}
+
+.price__cost {
+  font-size: 1.6rem;
+}
+
+.price__old {
+  margin-left: auto;
+  color: var(--grayish-blue);
+  text-decoration: line-through;
+}
+
+.price__deal {
+  background: var(--pale-orange);
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+
+.amount-container {
+  justify-content: space-between;
+  padding: 1rem;
+  height: 3.4rem;
+  background: var(--pale-orange);
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.addButton-container {
+  justify-content: center;
+  background: var(--orange);
+  padding: 1rem;
+  height: 3.4rem;
+  border-radius: 8px;
+}
+
+.addCart__addButton-icon {
+  margin-right: 1rem;
+  filter: brightness(1000);
+}

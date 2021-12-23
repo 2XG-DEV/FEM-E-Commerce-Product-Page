@@ -1,0 +1,87 @@
+.navbar {
+  height: 10vh;
+}
+
+.navbar__profile-container {
+  height: 35%;
+}
+
+.navbar__menu-container,
+.navbar__cart-container {
+  margin-right: 1.5rem;
+}
+
+.navbar__profile-container > img {
+  height: 100%;
+}
+
+.navbar__container {
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.navbar__menu-container {
+  z-index: 1002;
+}
+
+.navbar__list-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75vw;
+  height: 100vh;
+  background: white;
+  z-index: 1001;
+}
+
+.dark-overscreen {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 1001; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.navbar__list {
+  margin-top: 10vh;
+  font-family: "Kumbh Sans";
+  list-style-type: none;
+  font-weight: 700;
+}
+
+.navbar__list__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.navbar__list__item {
+  cursor: pointer;
+}
+
+.navbar__cart-container {
+  position: relative;
+}
+
+.navbar__cart-container::after {
+  content: attr(data-before);
+  color: white;
+  font-family: var(--font-fam);
+  background: var(--orange);
+  position: absolute;
+  top: -0.6rem;
+  right: -0.3rem;
+  font-weight: var(--fw-700);
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 0 0.4rem;
+  border-radius: 5px;
+}

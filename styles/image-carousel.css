@@ -1,0 +1,38 @@
+.image-carousel-container {
+  position: relative;
+}
+
+.image-carousel-left {
+  left: 0;
+  margin-left: 1rem;
+}
+
+.image-carousel-img-container {
+  height: 38vh;
+}
+
+.image-carousel-img-container > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-carousel-right {
+  right: 0;
+  margin-right: 1rem;
+}
+
+.image-carousel-left,
+.image-carousel-right {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: var(--white);
+  height: 3rem;
+  width: 3rem;
+  z-index: 1;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Fem Product Page</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container flex align-center">
+        <button class="navbar__menu-container pointer">
+          <img
+            src="./images/icon-menu.svg"
+            alt="menu"
+            onclick="myFunction()"
+            id="menu"
+          />
+        </button>
+        <div class="navbar__logo-container">
+          <img src="./images/logo.svg" alt="sneakers" />
+        </div>
+        <button
+          id="cart"
+          class="navbar__cart-container ml-auto"
+          onclick="toggleMobileCart()"
+        >
+          <img src="./images/icon-cart.svg" alt="cart" />
+        </button>
+        <div class="navbar__profile-container">
+          <img src="./images/image-avatar.png" alt="avatar" />
+        </div>
+      </div>
+      <div class="dark-overscreen" id="overlay">
+        <div class="navbar__list-container">
+          <ul class="navbar__list">
+            <li class="navbar__list__item">Collections</li>
+            <li class="navbar__list__item">Men</li>
+            <li class="navbar__list__item">Woman</li>
+            <li class="navbar__list__item">About</li>
+            <li class="navbar__list__item">Contact</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="image-carousel-container">
+        <div class="image-carousel-img-container">
+          <img id="current" src="./images/image-product-1.jpg" alt="photo" />
+        </div>
+        <div class="image-carousel-left">
+          <img id="prev" src="./images/icon-previous.svg" alt="left" />
+        </div>
+        <div class="image-carousel-right">
+          <img id="next" src="./images/icon-next.svg" alt="right" />
+        </div>
+      </div>
+      <div class="description">
+        <div class="description__container">
+          <p class="description__tag text-orange text-bold mb-m">
+            SNEAKER COMPANY
+          </p>
+          <h1 class="description__title text-bold mb-m">
+            Fall Limited Edition Sneakers
+          </h1>
+          <p class="description__text text-gray">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+      </div>
+      <div class="addCart">
+        <div class="addCart-container">
+          <div class="price flex align-center">
+            <p class="price__cost text-bold">$125.00</p>
+            <p class="price__deal text-orange text-bold">50%</p>
+            <p class="price__old text-bold">$250.00</p>
+          </div>
+          <div class="amount-container flex align-center">
+            <button id="decrement">
+              <img src="./images/icon-minus.svg" alt="minus" />
+            </button>
+            <div class="amount-number-container">
+              <p id="amount" class="text-bold">0</p>
+            </div>
+            <button id="increment">
+              <img id="increment" src="./images/icon-plus.svg" alt="plus" />
+            </button>
+          </div>
+          <div class="addButton-container flex align-center">
+            <button
+              id="addToCart"
+              class="addCart__addButton text-white text-bold"
+            >
+              <img
+                class="addCart__addButton-icon inline"
+                src="./images/icon-cart.svg"
+                alt=""
+              />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mCart" class="mobile-cart-view">
+        <div class="mobile-cart-container">
+          <div class="mCart__title-container flex align-center">
+            <p class="text-bold">Cart</p>
+          </div>
+          <hr />
+          <div class="mCart__items">
+            <div id="cart-container" class="mCart__items-container"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+  <script src="imageCarousel.js"></script>
+</html>

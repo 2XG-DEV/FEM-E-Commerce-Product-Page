@@ -1,0 +1,11 @@
+.description__tag {
+  font-size: 0.85rem;
+}
+
+.description__title {
+  line-height: 1;
+}
+
+.description__container {
+  padding: 1.6rem;
+}

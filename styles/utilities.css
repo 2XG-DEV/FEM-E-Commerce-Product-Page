@@ -1,0 +1,54 @@
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-pale-orange {
+  color: var(--pale-orange);
+}
+
+.text-bold {
+  font-weight: var(--fw-700);
+}
+
+.text-gray {
+  color: var(--dark-grayish-blue);
+}
+.text-white {
+  color: var(--white);
+}
+
+.text-dark {
+  color: var(--black);
+}
+
+.mb-m {
+  margin-bottom: 1rem;
+}
+
+.mr-m {
+  margin-right: 1rem;
+}
+
+.inline {
+  display: inline;
+}
+
+.display-none {
+  display: none;
+}
